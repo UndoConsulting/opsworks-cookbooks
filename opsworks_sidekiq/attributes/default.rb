@@ -8,3 +8,5 @@ node[:deploy].each do |application, deploy|
   default[:sidekiq][application.intern][:syslog] = false
 end
 
+override['sidekiq']['staging']['syncworker']['config']['logfile'] = '/srv/www/staging/current/logs/sidekiq.log'
+
