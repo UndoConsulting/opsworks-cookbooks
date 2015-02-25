@@ -5,8 +5,8 @@ default[:sidekiq] = {}
 node[:deploy].each do |application, deploy|
   default[:sidekiq][application.intern] = {}
   default[:sidekiq][application.intern][:restart_command] = "sudo monit restart -g sidekiq_#{application}_group"
-  default[:sidekiq][application.intern][:syslog] = false
+  default[:sidekiq][application.intern][:syslog] = true
 end
 
-override['sidekiq']['staging']['syncworker']['config']['logfile'] = '/srv/www/staging/current/logs/sidekiq.log'
+override['sidekiq']['staging']['syncworker']['config']['logfile'] = '/srv/www/staging/shared/log/sidekiq'
 
