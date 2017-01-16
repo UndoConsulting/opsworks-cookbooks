@@ -1,0 +1,3 @@
+[submodule "kodius-chef-recipes"]
+	path = kodius-chef-recipes
+	url = git@github.com:kodius/kodius-chef-recipes.git
