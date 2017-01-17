@@ -1,0 +1,8 @@
+name 'kodius-recipes'
+maintainer 'Kresimir Bojcic'
+maintainer_email 'kresimir.bojcic@krokodil.hr'
+license 'all_rights'
+description 'Installs/Configures kodius-recipes'
+long_description 'Installs/Configures kodius-recipes'
+version '0.1.0'
+depends 'magic_shell'
